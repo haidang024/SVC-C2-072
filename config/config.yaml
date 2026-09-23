@@ -1,0 +1,13 @@
+# Runtime parameters loaded by AgentRegistry and passed to Graph(config=...).
+# Static identity and compile-time requirements belong in config/agent.yaml.
+
+max_retry: 2
+timeout_s: 120
+llm_provider: "azure_openai"
+llm_model: "azure-openai-deployment"
+memory_enabled: true
+
+# Human review is mandatory before a briefing is finalized.
+hitl:
+  enabled: true
+  max_hitl: 3
